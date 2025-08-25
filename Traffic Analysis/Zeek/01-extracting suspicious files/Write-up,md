@@ -23,4 +23,4 @@ identify file types, and correlate them across multiple Zeek logs to detect pote
 
 zeek -C -r case1.pcap /opt/zeek/share/zeek/policy/frameworks/files/extract-all-files.zeek
 
-[Running Zeek against a pcap](Traffic Analysis/Zeek/01-extracting suspicious files/Screenshots/Picture1.png)
+[Running Zeek against a pcap](/Traffic Analysis/Zeek/01-extracting suspicious files/Screenshots/Picture1.png)
