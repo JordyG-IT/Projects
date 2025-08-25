@@ -34,6 +34,7 @@ zeek -C -r case1.pcap /opt/zeek/share/zeek/policy/frameworks/files/extract-all-f
 ### 3. Verify extracted Files  
 A new folder extract_files/ is created with the captured files
 You can view them by using ls extract files.
+
 ![Running Zeek](Screenshots/Picture2.png)
 
 ### 4. Identify file types
