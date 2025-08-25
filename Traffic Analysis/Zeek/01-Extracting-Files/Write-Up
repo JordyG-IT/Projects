@@ -19,8 +19,37 @@ identify file types, and correlate them across multiple Zeek logs to detect pote
 
 ## Steps
 
-### 1. Run Zeek on the PCAP with the File Extraction Policy
+## 1. Create A Zeek script which loads the File extraction Policy
+
+echo @load /opt/zeek/share/zeek/policy/frameworks/files/extract-all-files.zeek > extract-allfiles.zeek
+
+### 2. Run Zeek on the PCAP with the File Extraction Policy
+
+Running the following command will run a custom Zeek script with the native File Extraction framework included using the @load
 
 zeek -C -r case1.pcap /opt/zeek/share/zeek/policy/frameworks/files/extract-all-files.zeek
 
 ![Running Zeek](Screenshots/Picture1.png)
+
+### 3. Verify extracted Files  
+A new folder extract_files/ is created with the captured files
+You can view them by using ls extract files.
+![Running Zeek](Screenshots/Picture2.png)
+
+### 4. Identify file types
+Next up you can identify the file types of the extracted files using the following command
+
+file * 
+
+![Running Zeek](Screenshots/Picture3.png)
+
+### 5. We can use hashes to check if the files are malicious using sites like Virus total. We find the Hashes by running Zeek's Hash framework.
+zeek -C -r case.pcap hash-demo.zeek
+
+![Running Zeek](Screenshots/Picture4.png)
+
+### 6. We can now look at the files.log to grab the md5 sha1 or sha256 hash of the suspicious executable
+
+cat files.log | zeek-cut conn_uids md5 | grep"CIt2r51C0rT9eOlaVl"
+
+![Running Zeek](Screenshots/Picture5.png)
