@@ -4,7 +4,7 @@ This repository contains my collection of projects across different areas of IT,
 Each folder represents a separate topic or skill area, with its own scripts, labs, and notes.  
 
 ## Structure
-- `powershell/` → PowerShell automation scripts and experiments  
+- `Powershell/` → PowerShell automation scripts and experiments  
 - `Traffic Analsysis/` → Labs and notes on network monitoring and analysis tools (including file extraction and log analysis)  
 
 ## Purpose
