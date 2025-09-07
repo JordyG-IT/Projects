@@ -1,7 +1,9 @@
 **Masterminds – Network Forensics Lab**
+
 Date: 09/05/2025
+
 Tools: Brim / Zui
-Difficulty: Medium
+
 ---
 **Scenario**
 Three machines were infected with unknown malware, likely from a phishing email and an infected USB drive. Network traffic packet captures (one per machine) were collected. Using Zui, we analyzed the traffic to investigate the attack, identify malicious activity, and determine the responsible threat actor.
