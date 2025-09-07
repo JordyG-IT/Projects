@@ -32,8 +32,6 @@ nmap -sT
 (nmap) RST, ACK ->
 ```
 
-*Observation:* Rapid sequences of SYN packets to multiple ports indicate scanning. Packet **lengths of ~74 bytes** are typical for TCP packets with options.
-
 **Closed port flow:**
 ```
 (nmap) SYN  ->
@@ -46,6 +44,8 @@ tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024
 ```
 
 ![TCPConnectScan](Screenshots/wshark1.PNG)
+
+*Observation:* Rapid sequences of SYN packets to multiple ports indicate scanning. Packet lengths of 74 bytes are typical for TCP packets with options.
 
 ---
 
