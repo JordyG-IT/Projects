@@ -1,7 +1,7 @@
 # User Profile Backup Script
 
 ## Problem
-Automate backing up user profiles (Documents, Desktop) to a NAS, compressing them into a tarball, and ensuring safe transfer.
+Automate backing up user profiles (Documents, Desktop) to a NAS, packaging the contents into a tarball, compressing with gzip, and ensuring safe transfer.
 
 ## Approach
 - Copy important folders to a temporary backup folder - Handles copying even when folder / file permissions may be an issue.
