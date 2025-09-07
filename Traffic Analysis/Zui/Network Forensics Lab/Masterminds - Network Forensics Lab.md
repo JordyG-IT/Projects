@@ -18,17 +18,20 @@ Three machines were infected with unknown malware, likely from a phishing email 
 **Investigation Summary**
 
 **Victim Host:** 192.168.75.249
-•	Step 1: Imported PCAP from incident response team
+
+**•	Step 1: Imported PCAP from incident response team**
+
 o	Observed baseline traffic and unusual connection spikes
 
 ![Opening a Pcacp](Screenshots/1.png)
 ---
 **•	Step 2: Queried conn.log**
+
 o	Host 192.168.75.249 received multiple suspicious connections
 
 ![Opening a Pcacp](Screenshots/2.png)
 ---
-•	Step 3: Analyzed unique DNS requests
+**•	Step 3: Analyzed unique DNS requests**
 o	Queries to CAB.MYFKN.COM observed
 
 ![Opening a Pcacp](Screenshots/3.png)
@@ -57,7 +60,8 @@ o	Indicates malware delivery activity
 ![Opening a Pcacp](Screenshots/6.png)
 
 ---
-•	Step 7: Other infected hosts
+**•	Step 7: Other infected hosts**
+
 o	Similar behavior observed, suggesting lateral spread
 ---
 **Indicators of Compromise (IOCs)**
